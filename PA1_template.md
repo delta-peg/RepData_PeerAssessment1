@@ -16,7 +16,7 @@ activity = read_csv("activity.zip")
 
 ```
 ## 
-## -- Column specification --------------------------------------------------------
+## -- Column specification ---------------------------------------------------------
 ## cols(
 ##   steps = col_double(),
 ##   date = col_date(format = ""),
@@ -48,7 +48,7 @@ hist(steps_per_day$stepsPerDay,
      xlab = "steps per day")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-16-1.png)<!-- -->
 
 The mean and median of the total number of steps taken per day are:
 
@@ -86,7 +86,7 @@ with(mean_steps_per_interval, plot(x = interval, y = meanNumberOfSteps, type = "
                                    ylab = "mean number of steps"))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-19-1.png)<!-- -->
 
 The interval in which, on average, the most steps are taken, is interval 835: 
 
@@ -137,7 +137,7 @@ hist(steps_per_day_nas_filled$stepsPerDay,
      xlab = "steps per day")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-10-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-23-1.png)<!-- -->
 
 The mean and median of the total number of steps taken per day are for the _filled_ dataset are:
 
@@ -191,4 +191,4 @@ activity_nas_filled %>%
 ## `summarise()` regrouping output by 'interval' (override with `.groups` argument)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-13-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-26-1.png)<!-- -->
